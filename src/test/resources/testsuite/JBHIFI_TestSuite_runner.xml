@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Automation" >
+    
+
+<listeners>
+        <listener class-name="com.wip.Listeners.TestListener"/>
+        <listener class-name="com.wip.Listeners.AnnotationTransformer"/>
+    </listeners>
+        
+        <test name="Smoke Test" preserve-order="true">
+            
+              <parameter name="browserType" value="GC"/> 
+                 <classes>
+                <class name="com.wip.test.LoginPageTest"/>
+                     <!--
+                <methods>
+                    <include  name="verifyInvalidLoginFunctionality"/>
+                </methods>
+               
+                </class>
+                 -->
+            </classes>
+            
+        </test>
+</suite>

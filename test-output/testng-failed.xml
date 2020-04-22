@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation]">
+  <listeners>
+    <listener class-name="com.wip.Listeners.TestListener"/>
+    <listener class-name="com.wip.Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="Smoke Test(failed)">
+    <parameter name="browserType" value="GC"/>
+    <classes>
+      <class name="com.wip.test.LoginPageTest">
+        <methods>
+          <include name="verifyTheScreenCaptureFunctionalityForFailedCase" invocation-numbers="0 0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.wip.test.LoginPageTest -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Automation] -->
